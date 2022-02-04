@@ -1,0 +1,80 @@
+body {
+  background-color: rgb(44, 22, 1);
+}
+
+h1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 200%;
+}
+
+.container {
+  background-color: rgb(130, 158, 190);
+  border: 5px solid grey;
+  width: 300px;
+  border-radius: 12px;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+}
+
+.display {
+  border: 2px solid black;
+  width: 100%;
+  margin: 0 auto;
+  height: 40px;
+  font-size: 175%;
+  text-align: end;
+  font-weight: bold;
+}
+
+table{
+  border-spacing: 6px;
+}
+
+.btn {
+  width: 64px;
+  height: 64px;
+  font-size: 150%;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+
+.clear {
+  background-color: red;
+  color: whitesmoke;
+  border: 1px solid black;
+  text-align: ;
+}
+
+.clear:hover{
+  background-color: rgb(247, 119, 119);
+}
+.clear:active{
+  background-color: rgb(139, 0, 0);
+}
+
+.hide {
+  display: none;
+}
+
+.backspace, .igual {
+  width: 140px;
+}
+
+.igual{
+  background-color: lightgreen;
+  border: 1px solid black;
+}
+
+.igual:hover{
+  background-color: rgb(185, 238, 185);
+}
+.igual:active{
+  background-color: rgb(97, 161, 97);
+  }
