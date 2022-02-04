@@ -104,3 +104,9 @@ function calcular() {
     operador = null
     valorAnterior = 0
 }
+
+
+//desabilitar teclado até as funções de key press serem programadas
+document.onkeydown = function (e) {
+    return false;
+}
