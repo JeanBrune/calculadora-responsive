@@ -43,7 +43,6 @@ function inserir(numero) {
     else {
         display.value += numero.innerText
     }
-    display.focus()
 }
 
 //criar função de inserir virgula (onclick direto pelo HTML)
@@ -54,7 +53,6 @@ const decimal = () => {
     } else if (display.value.indexOf(".") == -1) {//verificar se já existe alguma virgula
         display.value += "."
     }
-    display.focus()
 }
 
 
@@ -65,21 +63,17 @@ function limpar() {
     console.log("visor apagado")
     operador = null
     valorAnterior = 0
-    display.focus()
 }
 
 //criar função de apagar o ultimo digito
 function backspace() {
     if (display.value != "0") {
+        display.value = display.value.slice(0,-1);
         //cortar a string do display e remover o ultimo digito
-        display.value = display.value.slice(0, -1);
-        //retornar o foco pro display
-        display.focus()
         if (display.value == "") {
             display.value = valorInicial
         }
     }
-    display.focus()
 }
 
 
@@ -88,7 +82,6 @@ function opera(op) {
     valorAnterior = parseFloat(display.value)
     operador = op
     novoNumero = true
-    display.focus()
 }
 
 function calcular() {
@@ -110,5 +103,4 @@ function calcular() {
     novoNumero = true
     operador = null
     valorAnterior = 0
-    display.focus()
 }
